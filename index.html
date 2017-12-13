@@ -1,0 +1,205 @@
+
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>Vladyan</title>
+  <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+	<style>
+
+	body{
+		display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("mount.jpg");
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+	}
+
+
+
+
+.main{
+	position: relative;
+	 justify-content: center;
+    flex-flow: column wrap;
+     background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+        background-position: center;
+
+  display:flex;
+  flex-flow: row wrap;
+ width: 75%;
+ z-index: 200;
+
+}
+.right{
+  height:500px;
+   width:45%;
+   background: white;
+
+}
+.left{
+ height:500px;
+  width:55%;
+  background-repeat: no-repeat;
+       background-position: 50%;
+    background-size: cover;
+    background-image: url(mount.jpg);
+
+}
+img {
+	border-radius:75%;
+}
+.form{
+	    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+input{
+    height: 40px;
+    width: 50%;
+    margin-bottom: 10px;
+    font-family: Segoe UI Light;
+    font-size: 16px;
+	}
+
+.ava{
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    margin: 40px;
+}
+.footer{
+	    display: flex;
+    justify-content: center;
+
+    height: 30%;
+    align-items: flex-end;
+}
+.footer p{
+	margin-bottom: 30px;
+}
+.right p{
+	font-weight: 100;
+	font-size: 17px;
+	color: grey;
+}
+.header{
+	    color: rgba(16, 20, 21, 0.87);
+font-family: 'Anton', sans-serif;
+  font-size: 22px;
+    margin-left: 30px;
+    color: white;
+}
+p{
+	font-size: 20px;
+	color: snow;
+	margin-top: 0;
+	padding-left: 3px;
+
+
+}
+#img{
+      border: 1px solid whitesmoke;
+}
+h1{
+	color: snow;
+	font-weight: 100;
+	margin-bottom: 0;
+	margin-top: 10px;
+	line-height: 65px;
+}
+.btn{
+	    background: blue;
+    border: 1px blue solid;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn:hover{
+	background: red;
+	border: 1px red solid;
+	cursor: pointer;
+}
+#mail{
+background: url(mail.svg) no-repeat;
+padding-left: 30px;
+background-size: 29px 18px;
+  background-position: left;
+  padding-bottom: 3px;
+}
+
+
+
+#pass{
+background: url(pass2.svg) no-repeat;
+padding-left: 30px;
+background-size: 29px 18px;
+    background-position: left;
+
+}
+@media only screen and (min-width: 301px) and (max-width: 820px) {
+.main{
+  display:flex;
+  flex-flow: row wrap;
+ width: 100%;
+
+}
+.right{
+  height:500px;
+   width:100%;
+   background: white;
+
+}
+.left{
+ height:500px;
+  width:100%;
+}
+
+	}
+
+
+	</style>
+<script>
+  var form = document.getElementById("mail");
+  form.value = '';
+
+</script>
+</head>
+<body>
+<div class="main">
+<div class="left">
+<div class="header">
+<h1>What will you build today?</h1>
+<p>Let's get started</p>
+</div>
+</div>
+<div class="right">
+<div class="ava">
+<img src="man.jpg" width="85" height="85" id="img">
+</div>
+<div class="form">
+<p>Need an account ? Sign up</p>
+<input type="text" name="mail" placeholder="E-mail"  id="mail"  />
+<input type="password" name="" placeholder="Password" id="pass" >
+<input type="button" name="" value="Sign in" class="btn">
+</div>
+<div class="footer">
+<p>Forgot your password ?</p>
+</div>
+</div>
+
+
+</body>
